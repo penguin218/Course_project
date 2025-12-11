@@ -1,0 +1,12 @@
+### model
+model_name_or_path: /data/lhx/LLaMA-Factory/models/base/Qwen3-14B
+adapter_name_or_path: /data/lhx/LLaMA-Factory/saves/finetuned_reasoning/Qwen3-14B/Qwen3-14B-merged_extract_label_cot/lora/sft
+template: qwen
+finetuning_type: lora
+trust_remote_code: true
+
+### export
+export_dir: /data/lhx/LLaMA-Factory/saves/finetuned_reasoning/Qwen3-14B/Qwen3-14B-merged_extract_label_cot/merged-model
+export_size: 2
+export_device: cpu  # choices: [cpu, auto]
+export_legacy_format: false
